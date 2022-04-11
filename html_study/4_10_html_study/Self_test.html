@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>나도 위기의식을 느끼는 건가?</title>
+        <style>
+            #menubar{
+                background: olive;
+            }
+            #menubar ul{
+                width: 567px;
+            }
+            #menubar ul li {
+                display : inline-block;
+                padding: 0px 15px;
+            }
+            #menubar ul li a{
+                color : whitesmoke;
+                text-decoration: none;
+            }
+            #menubar ul li a:hover{
+                color : magenta;
+            }
+            @keyframes bang{
+                0% { color :blue;}
+                30% {color : green;}
+                100% {color : red;}
+            }
+            span {
+                animation-name : bang;
+                animation-duration : 3s;
+                animation-iteration-count : infinite;
+                font-size: 200%;
+            }
+            span:hover{
+                transition : font-size 2s;
+                font-size: 500%;
+            }
+            table {
+                border-collapse : collapse;
+                
+            }
+            td, th{
+                
+                width : 50px;
+                height :40px;
+                text-align: left;
+            }
+            thead, tfoot {
+                background : gray;
+            }
+            tbody{
+                background: aliceblue;
+            }
+            tbody tr:hover{
+                background: pink;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav id="menubar">
+        <ul>
+            <li><a href="sheet.html">file</a></li>
+            <li><a href="#">option</a></li>
+            <li><a href="#">terminal</a></li>
+            <li><a href="#">window</a></li>
+            <li><a href="#">help</a></li>
+        </ul>
+    </nav>
+    <table>
+        <thead>
+            <tr><th>과목</th><th>1학기</th><th>2학기</th></tr>
+        </thead>
+        <tfoot>
+            <tr><th>합</th><th>4.3</th><th>4.3</th></tr>
+        </tfoot>
+        <tbody>
+            <tr><td>HTML</td><td>A</td><td>A+</td></tr>
+            <tr><td>C</td><td>A+</td><td>A</td></tr>
+            <tr><td>PYTHON</td><td>A+</td><td>A+</td></tr>
+        </tbody>
+    </table>
+
+        <span>빵!</span>
+    </body>
+</html>
