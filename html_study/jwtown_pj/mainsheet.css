@@ -1,0 +1,29 @@
+table{
+    border : 1px solid blue;
+    border-collapse :collapse;
+    width: 400px;
+    height: 300px;
+}
+td, th{
+    border : 1px dotted green;
+    height: 20px;
+    width : 100px;
+    padding : 10px;
+    text-align : left;
+}
+thead, tfoot{
+    background: darkgray;
+    color : yellow;
+}
+td, tfoot th{
+    border-bottom: 1px solid gray;
+}
+tbody tr:nth-child(even){/*짝수 <tr>에 적용*/
+    background: aliceblue;
+}
+tbody tr:hover{
+    background: pink;
+}
+ /* {
+    background: yellow 
+} */

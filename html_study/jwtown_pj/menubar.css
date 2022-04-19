@@ -1,0 +1,22 @@
+        #menubar {background : rgb(24, 23, 23);}
+
+        #menubar ul li{
+            display :inline-block;
+            list-style-type: none;
+            padding: 20px 30px 30px 30px;
+            }
+
+        #menubar ul li a{color : rgb(222, 216, 216); text-decoration : none;}
+
+        #menubar ul li a:hover{color : rgba(0, 255, 229, 0.796)}
+
+        /* span{   animation-name : bang;
+                animation-duration : 3s;
+                animation-iteration-count : infinite;
+                image-rendering: 200%;}
+        span:hover{ima
+            image-rendering: 500%;
+        } */
+        #gomatsunana{height : 400px; width : 370px;}
+
+
