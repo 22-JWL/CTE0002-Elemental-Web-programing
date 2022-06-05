@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWTOWN</title>
+    <style>
+        #menubar{
+            background: black;        
+        }
+        #menubar li{
+            color: white;
+            display: inline-block;/*중요*/
+            padding: 30px 30px;
+        }
+        #menubar ul li a{
+            color: white;
+            text-decoration: none;/*중요*/
+        }
+        #menubar li a:hover{
+            color: aquamarine;
+        }
+        th, td{
+            border: 1px dotted green;
+            width: 100px;
+            height: 80px;
+        }
+        thead, tfoot{
+            background: lightgray;
+            color: yellow;
+        }
+        tbody tr:hover{
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <nav id="menubar">
+        <ul>
+            <li style="padding-right:100px;">JWTOWN</li>
+            <li><a href="two.html">1</a></li>
+            <li><a href>2</a></li>
+            <li><a href>3</a></li>
+            <li><a href>4</a></li>
+        </ul>
+    </nav>
+
+    <table style="border: solid blue; width: 400px; height: 500px; border-collapse: collapse;"> 
+        <thead>
+            <tr><th>구성원</th><th>직책</th><th>지분율</th></tr>
+        </thead>
+        <tfoot>
+            <tr><th>잘</th><th>부탁</th><th>드립니다</th></tr>
+        </tfoot>
+        <tbody>
+            <tr><td>이재욱</td><td>사장:헤드개발자</td><td>30%</td></tr>
+            <tr><td>이재훈</td><td>홍보팀장</td><td>10%</td></tr>
+            <tr><td>김미선</td><td>재무팀장</td><td>60%</td></tr>
+        </tbody>
+    </table>
+    <a href="https://www.hansung.ac.kr"><img src="Images/bugi/bugi4.png"></a>
+    <iframe src="https://www.hansung.ac.kr" frameborder="1"></iframe>
+    <iframe src="musician.html" frameborder="1"></iframe>
+    <video src="Images/snpe1.mp4" autoplay controls></video>
+    <audio src="Images/snpe1.mp4" muted loop controls></audio>
+
+</body>
+</html>

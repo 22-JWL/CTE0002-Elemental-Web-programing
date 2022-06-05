@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서의 동적 구성</title>
+    <script>
+        function createDIV(){
+            var obj = document.getElementById("parent");//<p "id=p"> 태그의 dom객체 찾기
+            var newDIV = document.createElement("div");//를 호출하면 html태그의 dom객체를 생성할 수 있다.
+            //div태그의 dom 객체를 생성하는 코드이다
+            newDIV.innerHTML = "새로생성된 div입니다.";//텍스트 삽입
+            newDIV.setAttribute("id", "myDiv");//속성추가하거나 css3스타일 시트도 달 수 있다.
+            newDIV.style.backgroundColor = "yellow";
+
+            
+            
+            newDIV.onclick = function(){
+                var p = this.parentElement;//부모 html 태그 요소
+                p.removeChild(this);//자신을 부모로부터 제거
+            };
+            obj.appendChild(newDIV);
+        }
+    </script>
+</head>
+<body id = "parent">
+    <h3>div 객체를 동적으로 생성, 삽입하는 예제</h3>
+    <hr>
+    <p></p>
+    <a href="javascript:createDIV()">DIV 생성</a>
+</body>
+</html>

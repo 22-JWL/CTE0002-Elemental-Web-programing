@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[]로 배열 만들기</title>
+</head>
+<body>
+    <h3>[]로 배열 만들기</h3>
+    <hr>
+    <script>
+        var plots =[20, 30, 40 ,50 ,60];
+        document.write("var plots = [20,30, 40 ,50]");
+
+        for (let i = 0; i < plots.length; i++) {
+            var size = plots[i];
+            while (size>0) {   
+                document.write("*");
+                size--;
+            }
+            document.write(plots[i] + "<br>");
+        }
+    </script>
+    
+</body>
+</html>

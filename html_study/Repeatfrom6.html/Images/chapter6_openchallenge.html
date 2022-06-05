@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starpiramid</title>
+    <script>
+        function printstar(){
+            m = parseInt(n);
+
+            if(isNaN(n))
+                document.write("입력 오류 입니다."); return;
+
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j <= i; j++) {
+                    document.write("*");
+                    
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>별 문자 출력하기</h3>
+    <hr>
+    <script>
+        var n = prompt("정수를 입력하세요", 0);
+        printstar();
+    </script>
+</body>
+</html>

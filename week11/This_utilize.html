@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this utilize</title>
+    <script>
+        function change(obj, size, color){
+            obj.style.color = color;
+            obj.style.fontSize = size;
+        }
+    </script>
+</head>
+<body>
+<h3>this 활용</h3>
+<hr>
+<!-- this는 이 button객체를 가리키므로 객체의 주소가 cha -->
+<button onclick="change(this, '30px', 'red')">Button</button>
+<button onclick="change(this, '30px', 'blue')">Button</button>
+<div onclick="change(this, '25px', 'orange')">여기 클릭하면 크기와 색 변경</div>
+    
+</body>
+</html>

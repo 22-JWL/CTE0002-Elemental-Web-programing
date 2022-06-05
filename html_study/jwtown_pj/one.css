@@ -1,0 +1,15 @@
+#menubar{
+    background: black;        
+}
+#menubar li{
+    color: white;
+    display: inline-block;/*중요*/
+    padding: 30px 30px;
+}
+#menubar ul li a{
+    color: white;
+    text-decoration: none;/*중요*/
+}
+#menubar li a:hover{
+    color: aquamarine;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단 출력함수 만들기</title>
+    <script>
+        function gugu(n){
+        var m = parseInt(n);
+
+        if(isNaN(m) || m< 0 || m >19){
+            alert("잘못입력하셨습니다.");
+            return;
+        }
+        for (let i = 0; i <= 19; i++) {
+            document.write(m + "x" + i + "=" + m*i + "<br>");
+        }
+
+        // if(isNaN(n))
+        //     document.write("문자입니다. 다시 입력하세요!");return;
+        
+
+        // if(n<0)
+        // document.write(n+ "은 0보다 작은 수 입니다. 다시 입력하세요!");
+        // else if(n>19) {
+        //         document.write(n + "은 0보다 큰 수 입니다. 다시 입력하세요!");  
+        // } else {
+        //         document.write("잘 입력하셨습니다.");
+        // }
+        
+        //     var sum= 0;
+        //     sum = n*n;
+        // document.write("당신이 입력한 수는" + sum + "입니다.");
+        }
+    </script>
+</head>
+<body>
+    <script>
+        n = prompt("구구단 하고싶은 0~19까지의 수를 적으시오", 0);
+        gugu(n);
+        
+    </script>
+</body>
+</html>

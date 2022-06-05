@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.getElementsByTagName()</title>
+    <script>
+        function change() {
+            var spanArray = document.getElementsByTagName("span");
+            for (let i = 0; i < spanArray.length; i++) {
+                var span = spanArray[i];
+                span.style.color = "orchid";
+                span.style.fontSize = "20px";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3> 내가 좋아하는 과일
+        <button onclick="change()">누르세요</button>
+    </h3>
+    <hr>
+    재욱이는 <span>딸기쥬얼리스무디와</span> 아마스빈 버블티의<span>오레오 버블티?</span>를 좋아해요
+</body>
+</html>
