@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10</title>
+</head>
+<body>
+    <h3>book 객체 배열 만들기</h3>
+    <hr>
+    <script>
+        var bookArray = [];
+        var high = 0;
+        var highTitle;
+        for (let i = 0; i < 5; i++) {
+            bookArray[i] = prompt("콤마로 분리하면서 책제목 저자 가격 순으로 입력");
+            var s = bookArray[i].split(",");
+            var book = {
+                title : s[0],
+                author : s[1],
+                price : s[2]
+            };
+
+            if (book.price>high) {
+                high = book.price;
+                highTitle = book.title;
+            }
+            
+        }
+
+        for (let i = 0; i < bookArray.length; i++) {
+             document.write(bookArray[i] + "<br>");
+        }
+        document.write("<hr>");
+
+        document.write(highTitle);
+    </script>
+</body>
+</html>

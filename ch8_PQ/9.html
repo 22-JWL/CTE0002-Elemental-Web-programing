@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9</title>
+    <script>
+        function add(obj) {
+            var li = document.createElement("li");
+            li.type = "1";
+            li.style.color = "red";
+            li.style.backgroundColor = "pink";
+            li.innerHTML = prompt("라면을 끓이는 순성을 일력하라");
+            obj.appendChild(li);
+            
+        }
+    </script>
+</head>
+<body>
+    <h3>라면을 끓이는 순서</h3>
+    <hr>
+    <ol type="A" style="background-color: yellowgreen">
+        <li onclick="add(this)">물을 끓인다</li>
+    </ol>
+
+    <P onclick="add(this)">부가적인거는?</P>
+</body>
+</html>

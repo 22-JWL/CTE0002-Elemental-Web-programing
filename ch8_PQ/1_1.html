@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1_1</title>
+    <script>
+        // function color() {
+        //     var back = document.getElementById("back");
+        //     back.onmouseover = over;
+        //     back.onmouseout = out;
+        // }
+        // function over() {
+        //     back.style.backgroundColor= "green";
+        // }
+        // function out() {
+        //     back.style.backgroundColor= "white";
+        // }
+            function over() {
+                var back = document.getElementById("back");
+                back.style.backgroundColor = "green";
+            }
+            function out() {
+                var back = document.getElementById("back");
+                back.style.backgroundColor = "white";
+            }
+    </script>
+</head>
+<!-- <body onload="color()"> -->
+    <body>
+    <h3>라면</h3>
+    <hr>
+    <ol id="back" onmouseover="over()" onmouseout="out()">
+        <li>물</li>
+        <li>라면 스프</li>
+        <li>계란</li>
+        <li>3분후 <strong>ㄲ</strong></li>
+    </ol>
+</body>
+</html>

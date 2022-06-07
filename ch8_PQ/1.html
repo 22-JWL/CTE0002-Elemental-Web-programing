@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라면을 끓이는 순서</title>
+    <script>
+        
+        function change() {
+            var p = document.getElementsByTagName("ol");
+            this.style.backgroundColor="yellowgreen";
+            // var p = document.getElementById("list");
+            // p.style.fontColor = "green"; 
+        }
+    </script>
+</head>
+<body>
+    <h3>라면을 끓이는 순서</h3>
+    <hr>
+    <ol id="ol" type="A"  onmouseover="this.style.backgroundColor='yellowgreen'" onmouseout="this.style.backgroundColor='white'">
+        <li>물을 끓인다.</li>
+        <li>라면과 스프를 넣는다.</li>
+        <li>계란을 넣는다.</li>
+        <li>3분후 <strong>맛있게</strong> 먹는다.</li>
+    </ol>
+    <script>
+        var listArray = document.getElementsByTagName("li");
+        for (let i = 0; i < listArray.length; i++) {
+            listArray[i].style.color = "green";
+        }
+    </script>
+</body>
+</html>
